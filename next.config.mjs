@@ -26,6 +26,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   output: 'export', // 👈 Enable static export
+  distDir: 'out',
   basePath: isProd ? '/RohitKrish46/website' : '', // 👈 Update this
   assetPrefix: isProd ? '/RohitKrish46/website' : '', // 👈 Update this
   images: {
